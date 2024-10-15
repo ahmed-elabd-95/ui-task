@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <header class="header">
+        <div class="header-left">
+          <img src="./assets/logo.svg" alt="Profile" class="profile-img" />
+        </div>
+        <div class="header-middle">
+          <div class="search-bar-wrapper">
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <input
+              type="text"
+              class="search-bar"
+              placeholder="Search by name, job title..."
+            />
+          </div>
+        </div>
+        <nav class="header-right">
+          <a href="#" class="nav-icon">
+            <image src="assets/home.svg" alt="home" />
+
+            Home
+          </a>
+          <a href="#" class="nav-icon">
+            <image src="assets/jobs.svg" alt="Jobs" />
+
+            Jobs
+          </a>
+
+          <a href="#" class="nav-icon">
+            <image src="assets/employee.svg" alt="Employers" />
+
+            Employers
+          </a>
+
+          <div class="vertical-line"></div>
+
+          <a href="#" class="nav-icon">
+            <image src="assets/notification.svg" alt="Notifications" />
+
+            Notifications
+          </a>
+          <a href="#" class="nav-icon">
+            <image src="assets/messaging.svg" alt="Messaging" />
+
+            Messaging
+          </a>
+          <a href="#" class="nav-icon profile-btn">
+            <image src="assets/profile.svg" alt="Profile" />
+            <div class="profile-arrow">
+              <span>Profile</span>
+              <span class="arrow">▼</span>
+            </div>
+          </a>
+          <div class="full-profile">
+            <div class="profile-content">
+              <img
+                src="assets/profile.png"
+                alt="Profile"
+                class="drop-profile-img"
+              />
+              <div class="person-details">
+                <span class="name">Ahmed Amaar</span>
+                <span class="work">UX UI Designer</span>
+              </div>
+              <a href="#" class="profile-icon"
+                ><i class="fa fa-chevron-right"></i
+              ></a>
+            </div>
+            <ul class="profile-links">
+              <li><a href="#">Setting and privacy</a></li>
+              <li><a href="#">Language</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+            <a href="#" class="logout">Logout</a>
+          </div>
+        </nav>
+        <button class="navbar-toggler" type="button">
+          <img src="assets/mobile-profile.png" class="menutoggle" />
+        </button>
+      </header>
+      <div class="full-screen-menu">
+        <div class="mobile-profile-content">
+          <div class="mobile-content">
+            <img
+              src="assets/profile.png"
+              alt="Profile"
+              class="drop-profile-img"
+            />
+            <div class="mobile-person-details">
+              <span class="name">Ahmed Amaar</span>
+              <span class="work">UX UI Designer</span>
+            </div>
+          </div>
+          <a href="#" class="profile-icon"
+            ><i class="fa fa-chevron-right"></i
+          ></a>
+        </div>
+        <nav class="vertical-menu">
+          <a href="#" class="nav-icon">
+            <image src="assets/mobile-Home.svg" alt="home" />
+
+            Home
+          </a>
+          <a href="#" class="nav-icon">
+            <image src="assets/Bag.svg" alt="Jobs" />
+
+            Jobs
+          </a>
+
+          <a href="#" class="nav-icon">
+            <image src="assets/User.svg" alt="Employers" />
+
+            Employers
+          </a>
+
+          <a href="#" class="nav-icon">
+            <image src="assets/bell.svg" alt="Notifications" />
+
+            Notifications
+          </a>
+          <a href="#" class="nav-icon">
+            <image src="assets/Work.svg" alt="Messaging" />
+
+            Messaging
+          </a>
+        </nav>
+        <ul class="profile-links">
+          <li><a href="#">Setting and privacy</a></li>
+          <li><a href="#">Language</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <a href="#" class="logout">Logout</a>
+      </div>
+     
+      <aside class="sidebar">
+        <div class="menu-header">
+          <h3>Menu</h3>
+          <img src="assets/icons_setting.svg" alt="setting" />
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item">Dashboard</li>
+          <li class="menu-item has-dropdown">
+            Job application
+            <i class="fa fa-chevron-down dropdown-icon"></i>
+            <ul class="submenu">
+              <li>John Doe</li>
+              <li>James Bond</li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown">
+            Qualifications
+            <i class="fa fa-chevron-down dropdown-icon"></i>
+            <ul class="submenu">
+              <li>Qualification 1</li>
+              <li>Qualification 2</li>
+            </ul>
+          </li>
+          <li class="menu-item">About</li>
+          <li class="menu-item">Contact</li>
+        </ul>
+      </aside>
+
+      
+      <div class="main-content">
+        
+        <div class="sort-dropdown">
+          <button class="sort-btn">
+            Sorting by : <span class="selected-option">Top match</span>
+            <span class="arrow">▼</span>
+          </button>
+          <ul class="sort-options">
+            <li class="sort-option" data-value="top-match">Top match</li>
+            <li class="sort-option" data-value="newest">Newest</li>
+            <li class="sort-option" data-value="latest">Latest</li>
+          </ul>
+        </div>
+        <section class="job-listings">
+          <div class="job-header">
+            <div class="job-category">
+              <div>
+                <h2>UI Designer in Egypt</h2>
+                <p>70 job positions</p>
+              </div>
+              <label class="alert-toggle">
+                <span class="alert-text"> Set alert </span>
+                <input type="checkbox" id="alert-switch" />
+                <span class="toggle"></span>
+              </label>
+            </div>
+
+            <button class="filter-menu">
+              <img src="assets/menu.svg" />
+            </button>
+          </div>
+          
+          <aside class="mobile-sidebar">
+            <div class="menu-header">
+              <div class="mobile-header">
+                <img src="assets/back.svg" class="back-menu" />
+                <h3>Menu</h3>
+              </div>
+              <img src="assets/icons_setting.svg" alt="setting" class="setting" />
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">Dashboard</li>
+              <li class="menu-item has-dropdown">
+                Job application
+                <i class="fa fa-chevron-down dropdown-icon"></i>
+                <ul class="submenu">
+                  <li>John Doe</li>
+                  <li>James Bond</li>
+                </ul>
+              </li>
+              <li class="menu-item has-dropdown">
+                Qualifications
+                <i class="fa fa-chevron-down dropdown-icon"></i>
+                <ul class="submenu">
+                  <li>Qualification 1</li>
+                  <li>Qualification 2</li>
+                </ul>
+              </li>
+              <li class="menu-item">About</li>
+              <li class="menu-item">Contact</li>
+            </ul>
+          </aside>
+         
+          <div class="job-card">
+            <div class="job-title-container">
+              <img
+                src="assets/gaming-ui-designer-icon.png"
+                alt="gaming-ui-designer-icon"
+              />
+              <div class="job-title">
+                <h3>Gaming UI Designer</h3>
+                <p>Rockstar Games</p>
+              </div>
+            </div>
+            <div class="job-info">
+              <div class="info-details">
+                <img src="assets/location.svg" alt="location" />
+                <p>El Mansoura, Egypt</p>
+              </div>
+
+              <div class="info-details">
+                <img src="assets/date.svg" alt="date" />
+                <p>10 days ago</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span>0-3 yrs of exp</span>
+              <span>Full time</span>
+              <span>Remote</span>
+            </div>
+            <br />
+            <hr class="custom-hr" />
+            <div class="job-footer">
+              <span>Creative / Design</span>
+              <span> - </span>
+              <span>IT / Software development</span>
+              <span> - </span>
+              <span>Gaming</span>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-title-container">
+              <img
+                src="assets/SeniorUXUIDesigner.png"
+                alt="gaming-ui-designer-icon"
+              />
+              <div class="job-title">
+                <h3>Senior UX UI Designer</h3>
+                <p>Egabi</p>
+              </div>
+            </div>
+            <div class="job-info">
+              <div class="info-details">
+                <img src="assets/location.svg" alt="location" />
+                <p>Cairo, Egypt</p>
+              </div>
+
+              <div class="info-details">
+                <img src="assets/date.svg" alt="date" />
+                <p>a month ago</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span>0-3 yrs of exp</span>
+              <span>Full time</span>
+              <span>Hybrid</span>
+            </div>
+            <br />
+            <hr class="custom-hr" />
+            <div class="job-footer">
+              <span>Creative / Design</span>
+              <span> - </span>
+              <span>IT / Software development</span>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-title-container">
+              <img src="assets/reactfrontend.png" alt="reactfrontend" />
+              <div class="job-title">
+                <h3>React Frontend developer</h3>
+                <p>Magara</p>
+              </div>
+            </div>
+            <div class="job-info">
+              <div class="info-details">
+                <img src="assets/location.svg" alt="location" />
+                <p>Cairo, Egypt</p>
+              </div>
+
+              <div class="info-details">
+                <img src="assets/date.svg" alt="date" />
+                <p>a month ago</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span>5-7 yrs of exp</span>
+              <span>Freelance</span>
+              <span>Remote</span>
+            </div>
+            <br />
+            <hr class="custom-hr" />
+            <div class="job-footer">
+              <span>Creative / Design</span>
+              <span> - </span>
+              <span>IT / Software development</span>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-title-container">
+              <img
+                src="assets/gaming-ui-designer-icon.png"
+                alt="gaming-ui-designer-icon"
+              />
+              <div class="job-title">
+                <h3>Gaming UI Designer</h3>
+                <p>Rockstar Games</p>
+              </div>
+            </div>
+            <div class="job-info">
+              <div class="info-details">
+                <img src="assets/location.svg" alt="location" />
+                <p>El Mansoura, Egypt</p>
+              </div>
+
+              <div class="info-details">
+                <img src="assets/date.svg" alt="date" />
+                <p>10 days ago</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span>0-3 yrs of exp</span>
+              <span>Full time</span>
+              <span>Remote</span>
+            </div>
+            <br />
+            <hr class="custom-hr" />
+            <div class="job-footer">
+              <span>Creative / Design</span>
+              <span> - </span>
+              <span>IT / Software development</span>
+              <span> - </span>
+              <span>Gaming</span>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-title-container">
+              <img src="assets/reactfrontend.png" alt="reactfrontend" />
+              <div class="job-title">
+                <h3>React Frontend developer</h3>
+                <p>Magara</p>
+              </div>
+            </div>
+            <div class="job-info">
+              <div class="info-details">
+                <img src="assets/location.svg" alt="location" />
+                <p>Cairo, Egypt</p>
+              </div>
+
+              <div class="info-details">
+                <img src="assets/date.svg" alt="date" />
+                <p>a month ago</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span>5-7 yrs of exp</span>
+              <span>Freelance</span>
+              <span>Remote</span>
+            </div>
+            <br />
+            <hr class="custom-hr" />
+            <div class="job-footer">
+              <span>Creative / Design</span>
+              <span> - </span>
+              <span>IT / Software development</span>
+            </div>
+          </div>
+
+          
+          <div class="pagination">
+            <button><i class="fa fa-chevron-left"></i></button>
+            <button>1</button>
+            <button class="active">2</button>
+            <button>3</button>
+            <button><i class="fa fa-chevron-right"></i></button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"> </script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
