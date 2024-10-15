@@ -362,6 +362,14 @@ body {
 .job-title-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.job-title,.job-image{
+  margin-right: 10px;
+}
+.like{
+  margin-left: auto;
+  cursor: pointer;
 }
 .job-info,
 .info-details {
